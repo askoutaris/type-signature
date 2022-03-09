@@ -10,6 +10,8 @@ ISignatureBuilder signatureBuilder = new SignatureBuilder(typeScanner, hashGener
 string signature = signatureBuilder.GetSignature<Person>();
 
 Console.WriteLine($"The signature of type Person is: {signature}");
+
+//The signature of type Person is: b1e38d81d7b812739b0fd09e053a1ecf1936144619e4452ac8633feea6ad41fe
 ```
 
 ### ASP.NET Core
