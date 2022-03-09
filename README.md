@@ -4,12 +4,12 @@ Creates the signature of the entire structure of a type (including all its prope
 ### IBinder/BinderFactory Usage
 ```csharp
 ITypeScanner typeScanner = new TypeScanner();
-			IHashGenerator hashGenerator = new SHA512HashGenerator();
-			ISignatureBuilder signatureBuilder = new SignatureBuilder(typeScanner, hashGenerator);
+IHashGenerator hashGenerator = new SHA512HashGenerator();
+ISignatureBuilder signatureBuilder = new SignatureBuilder(typeScanner, hashGenerator);
 
-			string signature = signatureBuilder.GetSignature<Person>();
+string signature = signatureBuilder.GetSignature<Person>();
 
-			Console.WriteLine($"The signature of type Person is: {signature}");
+Console.WriteLine($"The signature of type Person is: {signature}");
 ```
 
 ### ASP.NET Core
@@ -35,8 +35,8 @@ var serviceProvider = new ServiceCollection()
   .AddTypeSignatureSHA256()
   .BuildServiceProvider();
 
-	// resolve SignatureBuilder
-	ISignatureBuilder signatureBuilder = serviceProvider.GetService<ISignatureBuilder>();
+// resolve SignatureBuilder
+ISignatureBuilder signatureBuilder = serviceProvider.GetService<ISignatureBuilder>();
 
-	string signature = signatureBuilder.GetSignature<Person>();
+string signature = signatureBuilder.GetSignature<Person>();
 ```
