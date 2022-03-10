@@ -1,7 +1,7 @@
 # type-signature
 Creates the signature of the entire structure of a type (including all its properties, fields and children)
 
-### IBinder/BinderFactory Usage
+### TypeSignature Usage
 ```csharp
 ITypeScanner typeScanner = new TypeScanner();
 IHashGenerator hashGenerator = new SHA512HashGenerator();
