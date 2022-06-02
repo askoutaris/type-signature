@@ -2,7 +2,7 @@
 using TypeSignature;
 using TypeSignature.HashGenerators;
 
-namespace TemplateBinder.Extensions.DependencyInjection
+namespace TypeSignature.Extensions.DependencyInjection
 {
 	public static class ServiceCollectionExtensions
 	{

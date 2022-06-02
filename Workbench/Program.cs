@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
-using TemplateBinder.Extensions.DependencyInjection;
+using TypeSignature.Extensions.DependencyInjection;
 using TypeSignature;
 using TypeSignature.HashGenerators;
 
